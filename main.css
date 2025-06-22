@@ -4,6 +4,10 @@
     
 }
 
+.hide-overflow {
+    overflow-x: hidden;
+}
+
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 600;
