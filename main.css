@@ -35,6 +35,7 @@ a {
      align-items: center;
      justify-content: space-between;
      padding: 1rem 0rem;
+     min-height: 82px;
      background-color: rgba(255, 255, 255, 0.442);
      backdrop-filter: blur(8px);
      max-width: 800px;
@@ -111,6 +112,7 @@ h3 a {
     border-right:1px solid greenyellow;
     border-top:1px solid greenyellow;
     display: none;
+    cursor:pointer;
 }
 .hamburger-icon{
     font-size: 24px;
@@ -164,6 +166,9 @@ h3 a {
         top:0;
         right: 12px;
         background-color: rgba(0, 0, 0, 0.599);
+        backdrop-filter: blur(8px);
+        border-radius: 15px;
+        border: 1px solid orange;
         flex-direction: column;
         padding:15px;
         margin-top: 15px;
