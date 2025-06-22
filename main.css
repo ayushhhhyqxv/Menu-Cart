@@ -12,6 +12,7 @@ body {
   margin: 0;
   background-color: antiquewhite;
   margin-bottom: 100px;
+  overflow-x: hidden;
 }
 
 #logo {
@@ -104,6 +105,10 @@ h3 a {
     text-decoration-line: underline;
     color: darkblue;
 }
+h4 {
+    margin-top: 30px;
+    text-align: center;
+}
 .hamburger-container{
     overflow: hidden;
     position: relative;
@@ -111,7 +116,8 @@ h3 a {
     height:50px;
     border-right:1px solid greenyellow;
     border-top:1px solid greenyellow;
-    display: none;
+    top:0px;
+    transition: top 1s ease-in-out;
     cursor:pointer;
 }
 .hamburger-icon{
@@ -134,17 +140,19 @@ h3 a {
     border:1px solid greenyellow
 }
 .menu-open nav {
-    display: flex;
+    /* display:flex; */
+    right: 12px;
 }
 
 .menu-open .hamburger-container {
-    display: none;
+    /* display: none; */
+    top:-100px
 }
 
 
 @media (max-width:700px) {
     #logo{
-        width:36px;
+        width:48px;
     }
 
     header{
@@ -164,7 +172,7 @@ h3 a {
     nav {
         position: absolute;
         top:0;
-        right: 12px;
+        right: -200px;
         background-color: rgba(0, 0, 0, 0.599);
         backdrop-filter: blur(8px);
         border-radius: 15px;
@@ -172,12 +180,13 @@ h3 a {
         flex-direction: column;
         padding:15px;
         margin-top: 15px;
+        transition: right 1s ease-in-out;
         
         
     }
-    .nav-bar{
+    /* .nav-bar{
         display: none;
-    }
+    } */
     .hamburger-container,nav span{
         display: block;
     }
@@ -216,5 +225,7 @@ h3 a {
     h3 a {
         text-decoration-line: underline;
         color: darkblue;
+        margin-bottom: 30px;
     }
+
 }
